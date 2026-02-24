@@ -13,5 +13,5 @@ fn main() {
             ],
             &["protos"],
         )
-        .unwrap();
+        .expect("failed to compile jito protobuf definitions");
 }
