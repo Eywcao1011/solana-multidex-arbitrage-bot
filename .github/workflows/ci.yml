@@ -34,4 +34,4 @@ jobs:
         run: cargo check --locked
 
       - name: Sidecar typecheck
-        run: npx --prefix sidecar tsc --noEmit
+        run: cd sidecar && npx tsc --noEmit
