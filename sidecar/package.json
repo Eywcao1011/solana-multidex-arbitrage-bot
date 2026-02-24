@@ -1,0 +1,31 @@
+{
+    "name": "arb-sidecar",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+    },
+    "dependencies": {
+        "@meteora-ag/dlmm": "*",
+        "@orca-so/common-sdk": "^0.7.0",
+        "@orca-so/whirlpools-sdk": "^0.17.4",
+        "@project-serum/anchor": "*",
+        "@pump-fun/pump-sdk": "^1.24.0",
+        "@pump-fun/pump-swap-sdk": "^1.11.0",
+        "@raydium-io/raydium-sdk": "*",
+        "@solana/web3.js": "*",
+        "bn.js": "*",
+        "cors": "*",
+        "decimal.js": "*",
+        "express": "*",
+        "pumpdotfun-sdk": "*"
+    },
+    "devDependencies": {
+        "@types/bn.js": "*",
+        "@types/cors": "*",
+        "@types/express": "*",
+        "@types/node": "*",
+        "ts-node-dev": "*",
+        "typescript": "*"
+    }
+}

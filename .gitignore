@@ -1,0 +1,43 @@
+# Rust build output
+/target/
+
+# Node build/deps
+node_modules/
+sidecar/node_modules/
+
+# Logs and runtime output
+/logs/
+*.log
+sidecar.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+sidecar/.env
+
+# Local keypairs and wallets
+*.keypair
+*.keypair.json
+keypair*.json
+wallet*.json
+
+# Generated exports / metrics
+filtered_pools.txt
+arb_metrics.txt
+dexscreener_pools.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup/temp
+*.bak
+*.tmp
