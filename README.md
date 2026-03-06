@@ -159,31 +159,3 @@ Sidecar types:
 cd sidecar
 npx tsc --noEmit
 ```
-
-## CI
-GitHub Actions CI is included at:
-- [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
-
-It runs:
-- `cargo check --locked`
-- `npm ci --prefix sidecar`
-- `npx tsc --noEmit`
-
-## GitHub Upload Checklist
-- Do not commit `.env`, keypairs, or any private credentials.
-- Ensure large local build folders are not committed (`target/`, `sidecar/node_modules/`).
-- Run checks before push:
-```bash
-cargo check --locked
-npm ci --prefix sidecar
-npx --prefix sidecar tsc --noEmit
-```
-- If this directory is not a git repo yet, initialize and push:
-```bash
-git init
-git add .
-git commit -m "Initial public release"
-git branch -M main
-git remote add origin <your_repo_url>
-git push -u origin main
-```
